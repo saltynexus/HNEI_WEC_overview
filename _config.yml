@@ -3,7 +3,7 @@
 
 title: Introduction to Wave Energy
 author: Troy W. Heitmann
-copyright: 2024
+copyright: "2024"
 logo: logo.png
 
 
@@ -23,13 +23,21 @@ bibtex_bibfiles:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/saltynexus/HNEI_WEC_overview  # Online location of your book
-  path_to_book: # Optional path to your book, relative to the repository root
+  url: https://github.com/saltynexus/WE_sector_overview  # Online location of your book
+#  path_to_book: path/to/your/book  # An optional path to your book relative to root (defaults to repo root)
   branch: main  # Which branch of the repository should be used when creating links (optional)
 
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
+  favicon: "icons/favicon.png" # A path to a favicon image
   use_issues_button: true
   use_repository_button: true
   use_edit_page_button: true
+  home_page_in_navbar: true  # Whether to include your home page in the left Navigation Bar
+launch_buttons:
+  thebe: true
+#  notebook_interface: "jupyterlab"
+#  binderhub_url: "https://mybinder.org"  # The URL for your BinderHub (e.g., https://mybinder.org)
+
+
