@@ -31,10 +31,12 @@ repository:
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
   favicon: "icons/favicon.png" # A path to a favicon image
-  use_issues_button: true
-  use_repository_button: true
-  use_edit_page_button: true
-  home_page_in_navbar: true  # Whether to include your home page in the left Navigation Bar
+  use_issues_button: true      # Whether to add an "open an issue" button
+  use_repository_button: true  # Whether to add a link to your repository button
+  use_edit_page_button: true   # Whether to add an "edit this page" button to pages. If `true`, repository information in "repository" (above): must be filled in
+  home_page_in_navbar: true    # Whether to include your home page in the left Navigation Bar
+
+# Buttons to control interactivity
 launch_buttons:
   thebe: true
 #  notebook_interface: "jupyterlab"
