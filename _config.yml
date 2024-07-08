@@ -4,8 +4,10 @@
 title: Introduction to Wave Energy
 author: Troy W. Heitmann
 copyright: "2024"
-logo: logo.png
+logo: "icons/logo.png"    # Path to book logo
 
+description: >-
+  This is a description I just added.
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
@@ -15,7 +17,7 @@ execute:
 # Define the name of the latex output file for PDF builds
 latex:
   latex_documents:
-    targetname: book.tex
+    targetname: Intro_wave_energy.tex
 
 # Add a bibtex file so that we can create citations
 bibtex_bibfiles:
@@ -26,6 +28,23 @@ repository:
   url: https://github.com/saltynexus/WE_sector_overview  # Online location of your book
 #  path_to_book: path/to/your/book  # An optional path to your book relative to root (defaults to repo root)
   branch: main  # Which branch of the repository should be used when creating links (optional)
+
+# Advanced and power-user settings
+sphinx:
+  config:
+    mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+# Parse and render settings
+parse:
+  myst_enable_extensions:  # default extensions to enable in the myst parser.
+    - colon_fence
+    - deflist
+    - amsmath
+    - dollarmath
+    - strikethrough
+    - linkify
+    - tasklist
+  myst_dmath_double_inline: true  # Allow display math ($$) within an inline context
 
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository

@@ -57,6 +57,8 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'markdown';</script>
     <link rel="icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
@@ -411,6 +413,7 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="markdown-files">
 <h1>Markdown Files<a class="headerlink" href="#markdown-files" title="Link to this heading">#</a></h1>
+<p>Some content <a class="reference download internal" download="" href="_downloads/dd18bf3a8e0a2a3e53e2661c7fb53534/test.txt"><code class="xref download docutils literal notranslate"><span class="pre">and</span> <span class="pre">here</span> <span class="pre">is</span> <span class="pre">my</span> <span class="pre">role's</span> <span class="pre">content!</span></code></a></p>
 <p>Whether you write your book’s content in Jupyter Notebooks (<code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>) or
 in regular markdown files (<code class="docutils literal notranslate"><span class="pre">.md</span></code>), you’ll write in the same flavor of markdown
 called <strong>MyST Markdown</strong>.
@@ -421,6 +424,12 @@ This is a simple file to help you get started and show off some syntax.</p>
 is a slight variation on a flavor of markdown called “CommonMark” markdown,
 with small syntax extensions to allow you to write <strong>roles</strong> and <strong>directives</strong>
 in the Sphinx ecosystem.</p>
+<p>Let’s try some inline math: <span class="math notranslate nohighlight">\(2+2=4\)</span></p>
+<p>Let’s try some display style:</p>
+<div class="math notranslate nohighlight" id="equation-eqn">
+<span class="eqno">(1)<a class="headerlink" href="#equation-eqn" title="Link to this equation">#</a></span>\[ 4 = 0.5 \]</div>
+<p>This is the best equation <a class="reference internal" href="#equation-eqn">(1)</a> I’ve ever seen!</p>
+<p>Let’s try some <s>strikethrough text</s></p>
 <p>For more about MyST, see <a class="reference external" href="https://jupyterbook.org/content/myst.html">the MyST Markdown Overview</a>.</p>
 </section>
 <section id="sample-roles-and-directives">
