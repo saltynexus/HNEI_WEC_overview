@@ -1,5 +1,7 @@
 # Markdown Files
 
+Some content {download}`and here is my role's content! <./test.txt>`
+
 Whether you write your book's content in Jupyter Notebooks (`.ipynb`) or
 in regular markdown files (`.md`), you'll write in the same flavor of markdown
 called **MyST Markdown**.
@@ -11,6 +13,16 @@ MyST stands for "Markedly Structured Text". It
 is a slight variation on a flavor of markdown called "CommonMark" markdown,
 with small syntax extensions to allow you to write **roles** and **directives**
 in the Sphinx ecosystem.
+
+Let's try some inline math: $2+2=4$
+
+Let's try some display style:
+
+$$ 4 = 0.5 $$ (eqn)
+
+This is the best equation {eq}`eqn` I've ever seen!
+
+Let's try some ~~strikethrough text~~
 
 For more about MyST, see [the MyST Markdown Overview](https://jupyterbook.org/content/myst.html).
 
