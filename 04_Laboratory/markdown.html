@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>3. Ocean Energy &#8212; Wave Energy: An Ocean Engineer&#39;s High-Level Perspective</title>
+    <title>4. Laboratory Testing &#8212; Wave Energy: An Ocean Engineer&#39;s High-Level Perspective</title>
   
   
   
@@ -57,12 +57,12 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = '02_Introduction/markdown';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '04_Laboratory/markdown';</script>
     <link rel="icon" href="../_static/favicon.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="4. Wave Modeling" href="../03_Laboratory/markdown.html" />
-    <link rel="prev" title="1. Who’s Presenting?" href="../01_Who_I_am/markdown.html" />
+    <link rel="next" title="5. Floating OWC" href="../05_OWC_offshore/markdown.html" />
+    <link rel="prev" title="3.2. Climate" href="../03_Modeling/02_Climate/markdown.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -180,17 +180,16 @@
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../01_Who_I_am/markdown.html">1. Who’s Presenting?</a></li>
-
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">3. Ocean Energy</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../03_Laboratory/markdown.html">4. Wave Modeling</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../04_Modeling/markdown.html">5. Wave Modeling</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../04_Modeling/01_Weather/markdown.html">5.1. Weather</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../04_Modeling/02_Climate/markdown.html">5.2. Climate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02_Ocean_Energy/markdown.html">2. Ocean Energy</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../03_Modeling/markdown.html">3. Wave Modeling</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../03_Modeling/01_Weather/markdown.html">3.1. Weather</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../03_Modeling/02_Climate/markdown.html">3.2. Climate</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1"><a class="reference internal" href="../05_OWC_offshore/markdown.html">6. Wave Modeling</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../06_OWC_coastal/markdown.html">7. Wave Modeling</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../07_OSWEC_coastal/markdown.html">8. Bottom Fixed OSWEC</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">4. Laboratory Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05_OWC_offshore/markdown.html">5. Floating OWC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06_OWC_coastal/markdown.html">6. Bottom Fixed OWC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07_OSWEC_coastal/markdown.html">7. Bottom Fixed OSWEC</a></li>
 </ul>
 
     </div>
@@ -262,7 +261,7 @@
       
       
       
-      <li><a href="https://github.com/saltynexus/WE_sector_overview/edit/main/02_Introduction/markdown.md" target="_blank"
+      <li><a href="https://github.com/saltynexus/WE_sector_overview/edit/main/04_Laboratory/markdown.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -279,7 +278,7 @@
       
       
       
-      <li><a href="https://github.com/saltynexus/WE_sector_overview/issues/new?title=Issue%20on%20page%20%2F02_Introduction/markdown.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/saltynexus/WE_sector_overview/issues/new?title=Issue%20on%20page%20%2F04_Laboratory/markdown.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -309,7 +308,7 @@
       
       
       
-      <li><a href="../_sources/02_Introduction/markdown.md" target="_blank"
+      <li><a href="../_sources/04_Laboratory/markdown.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -380,9 +379,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -393,19 +390,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Ocean Energy</h1>
+    <h1>Laboratory Testing</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#energy-density">3.1. Energy Density</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -415,20 +404,21 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="ocean-energy">
-<h1><span class="section-number">3. </span>Ocean Energy<a class="headerlink" href="#ocean-energy" title="Link to this heading">#</a></h1>
-<p>Energy within our oceans can be found in different forms, with the most common being:</p>
-<ul class="simple">
-<li><p>Tidal</p></li>
-<li><p>Waves</p></li>
-<li><p>Current</p></li>
-<li><p>Thermal</p></li>
-</ul>
-<p>Here in Hawai’i, the tides are considered “micro-tidal”, which means their fluctations are relatively small. We also don’t have a predictable current field that can serve as a sustained resource (e.g., Gulf Stream). We’ll skip these two for the time being, but do know there are places around the world where these are primary candidates.</p>
-<p>Ocean thermal energy conversion (OTEC) does have application here in Hawai’i, atleast from a science and engineering perspective. Economic challenges still remain, in which the return on investment has limited</p>
-<section id="energy-density">
-<h2><span class="section-number">3.1. </span>Energy Density<a class="headerlink" href="#energy-density" title="Link to this heading">#</a></h2>
-</section>
+  <section class="tex2jax_ignore mathjax_ignore" id="laboratory-testing">
+<h1><span class="section-number">4. </span>Laboratory Testing<a class="headerlink" href="#laboratory-testing" title="Link to this heading">#</a></h1>
+<p>Once you know the wave conditions, you can scale them down.</p>
+<figure class="align-default" id="ore-lab">
+<img alt="../_images/ore_lab.png" src="../_images/ore_lab.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.1 </span><span class="caption-text">Wave flume in the ORE laboratory.</span><a class="headerlink" href="#ore-lab" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="osu-lab">
+<img alt="../_images/osu_flume.jpeg" src="../_images/osu_flume.jpeg" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.2 </span><span class="caption-text">Wave flume in the OSU laboratory.</span><a class="headerlink" href="#osu-lab" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 </section>
 
     <script type="text/x-thebe-config">
@@ -444,7 +434,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./02_Introduction"
+            path: "./04_Laboratory"
         },
         predefinedOutput: true
     }
@@ -462,20 +452,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../01_Who_I_am/markdown.html"
+       href="../03_Modeling/02_Climate/markdown.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">1. </span>Who’s Presenting?</p>
+        <p class="prev-next-title"><span class="section-number">3.2. </span>Climate</p>
       </div>
     </a>
     <a class="right-next"
-       href="../03_Laboratory/markdown.html"
+       href="../05_OWC_offshore/markdown.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">4. </span>Wave Modeling</p>
+        <p class="prev-next-title"><span class="section-number">5. </span>Floating OWC</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -485,21 +475,6 @@ document.write(`
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#energy-density">3.1. Energy Density</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>

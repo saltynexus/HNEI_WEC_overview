@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>4. Wave Modeling &#8212; Wave Energy: An Ocean Engineer&#39;s High-Level Perspective</title>
+    <title>3. Wave Modeling &#8212; Wave Energy: An Ocean Engineer&#39;s High-Level Perspective</title>
   
   
   
@@ -57,12 +57,12 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = '03_Laboratory/markdown';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '03_Modeling/markdown';</script>
     <link rel="icon" href="../_static/favicon.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="5. Wave Modeling" href="../04_Modeling/markdown.html" />
-    <link rel="prev" title="3. Ocean Energy" href="../02_Introduction/markdown.html" />
+    <link rel="next" title="3.1. Weather" href="01_Weather/markdown.html" />
+    <link rel="prev" title="2. Ocean Energy" href="../02_Ocean_Energy/markdown.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -180,17 +180,16 @@
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../01_Who_I_am/markdown.html">1. Who’s Presenting?</a></li>
-
-<li class="toctree-l1"><a class="reference internal" href="../02_Introduction/markdown.html">3. Ocean Energy</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">4. Wave Modeling</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../04_Modeling/markdown.html">5. Wave Modeling</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../04_Modeling/01_Weather/markdown.html">5.1. Weather</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../04_Modeling/02_Climate/markdown.html">5.2. Climate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02_Ocean_Energy/markdown.html">2. Ocean Energy</a></li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">3. Wave Modeling</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="01_Weather/markdown.html">3.1. Weather</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02_Climate/markdown.html">3.2. Climate</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1"><a class="reference internal" href="../05_OWC_offshore/markdown.html">6. Wave Modeling</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../06_OWC_coastal/markdown.html">7. Wave Modeling</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../07_OSWEC_coastal/markdown.html">8. Bottom Fixed OSWEC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04_Laboratory/markdown.html">4. Laboratory Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05_OWC_offshore/markdown.html">5. Floating OWC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06_OWC_coastal/markdown.html">6. Bottom Fixed OWC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07_OSWEC_coastal/markdown.html">7. Bottom Fixed OSWEC</a></li>
 </ul>
 
     </div>
@@ -262,7 +261,7 @@
       
       
       
-      <li><a href="https://github.com/saltynexus/WE_sector_overview/edit/main/03_Laboratory/markdown.md" target="_blank"
+      <li><a href="https://github.com/saltynexus/WE_sector_overview/edit/main/03_Modeling/markdown.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -279,7 +278,7 @@
       
       
       
-      <li><a href="https://github.com/saltynexus/WE_sector_overview/issues/new?title=Issue%20on%20page%20%2F03_Laboratory/markdown.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/saltynexus/WE_sector_overview/issues/new?title=Issue%20on%20page%20%2F03_Modeling/markdown.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -309,7 +308,7 @@
       
       
       
-      <li><a href="../_sources/03_Laboratory/markdown.md" target="_blank"
+      <li><a href="../_sources/03_Modeling/markdown.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -406,12 +405,14 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="wave-modeling">
-<h1><span class="section-number">4. </span>Wave Modeling<a class="headerlink" href="#wave-modeling" title="Link to this heading">#</a></h1>
+<h1><span class="section-number">3. </span>Wave Modeling<a class="headerlink" href="#wave-modeling" title="Link to this heading">#</a></h1>
 <p>Waves have the benefit of being highly predictable. This is due advances in our ability to predict the wind, which is the predominate forcing mechanism for waves.</p>
 <p>The material contents presented in this section were provided by <a class="reference external" href="https://www.soest.hawaii.edu/soestwp/about/directory/ning-li/">Dr. Ning Li</a> from the <a class="reference external" href="https://www.soest.hawaii.edu/ore/">Ocean and Resources Engineering (ORE) Department</a> at the <a class="reference external" href="https://manoa.hawaii.edu/">University of Hawai’i at Manoa</a>. As a developer of <a class="reference external" href="https://ioos.noaa.gov/about/about-us/">NOAA’s Integrated Ocean Observing System</a> (IOOS), Dr. Li is largely responsible for the research and development of the <a class="reference external" href="http://www.pacioos.hawaii.edu/">Pacific Islands Ocean Observing System</a> (PacIOOS) wave forcast system.</p>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>For all you surfers out there, her multi-day <a class="reference external" href="http://www.pacioos.hawaii.edu/waves-category/model/">wave model forcast</a> is <strong>freely available</strong> on the PacIOOS website. If you are wondering how well her forecast performs, she also provides objective model comparisons with <a class="reference external" href="http://www.pacioos.hawaii.edu/waves-category/buoy/">instrument oberservations</a> (click on “Forecast”).</p>
+</div>
+<div class="toctree-wrapper compound">
 </div>
 </section>
 
@@ -428,7 +429,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./03_Laboratory"
+            path: "./03_Modeling"
         },
         predefinedOutput: true
     }
@@ -446,20 +447,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../02_Introduction/markdown.html"
+       href="../02_Ocean_Energy/markdown.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">3. </span>Ocean Energy</p>
+        <p class="prev-next-title"><span class="section-number">2. </span>Ocean Energy</p>
       </div>
     </a>
     <a class="right-next"
-       href="../04_Modeling/markdown.html"
+       href="01_Weather/markdown.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">5. </span>Wave Modeling</p>
+        <p class="prev-next-title"><span class="section-number">3.1. </span>Weather</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

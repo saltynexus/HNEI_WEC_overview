@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>6. Wave Modeling &#8212; Wave Energy: An Ocean Engineer&#39;s High-Level Perspective</title>
+    <title>5. Floating OWC &#8212; Wave Energy: An Ocean Engineer&#39;s High-Level Perspective</title>
   
   
   
@@ -61,8 +61,8 @@
     <link rel="icon" href="../_static/favicon.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="7. Wave Modeling" href="../06_OWC_coastal/markdown.html" />
-    <link rel="prev" title="5.2. Climate" href="../04_Modeling/02_Climate/markdown.html" />
+    <link rel="next" title="6. Bottom Fixed OWC" href="../06_OWC_coastal/markdown.html" />
+    <link rel="prev" title="4. Laboratory Testing" href="../04_Laboratory/markdown.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -180,17 +180,16 @@
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../01_Who_I_am/markdown.html">1. Who’s Presenting?</a></li>
-
-<li class="toctree-l1"><a class="reference internal" href="../02_Introduction/markdown.html">3. Ocean Energy</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../03_Laboratory/markdown.html">4. Wave Modeling</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../04_Modeling/markdown.html">5. Wave Modeling</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../04_Modeling/01_Weather/markdown.html">5.1. Weather</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../04_Modeling/02_Climate/markdown.html">5.2. Climate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02_Ocean_Energy/markdown.html">2. Ocean Energy</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../03_Modeling/markdown.html">3. Wave Modeling</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../03_Modeling/01_Weather/markdown.html">3.1. Weather</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../03_Modeling/02_Climate/markdown.html">3.2. Climate</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">6. Wave Modeling</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../06_OWC_coastal/markdown.html">7. Wave Modeling</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../07_OSWEC_coastal/markdown.html">8. Bottom Fixed OSWEC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04_Laboratory/markdown.html">4. Laboratory Testing</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">5. Floating OWC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06_OWC_coastal/markdown.html">6. Bottom Fixed OWC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07_OSWEC_coastal/markdown.html">7. Bottom Fixed OSWEC</a></li>
 </ul>
 
     </div>
@@ -380,7 +379,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -391,11 +392,19 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Wave Modeling</h1>
+    <h1>Floating OWC</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#halona">5.1. Halona</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -405,14 +414,39 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="wave-modeling">
-<h1><span class="section-number">6. </span>Wave Modeling<a class="headerlink" href="#wave-modeling" title="Link to this heading">#</a></h1>
-<p>Waves have the benefit of being highly predictable. This is due advances in our ability to predict the wind, which is the predominate forcing mechanism for waves.</p>
-<p>The material contents presented in this section were provided by <a class="reference external" href="https://www.soest.hawaii.edu/soestwp/about/directory/ning-li/">Dr. Ning Li</a> from the <a class="reference external" href="https://www.soest.hawaii.edu/ore/">Ocean and Resources Engineering (ORE) Department</a> at the <a class="reference external" href="https://manoa.hawaii.edu/">University of Hawai’i at Manoa</a>. As a developer of <a class="reference external" href="https://ioos.noaa.gov/about/about-us/">NOAA’s Integrated Ocean Observing System</a> (IOOS), Dr. Li is largely responsible for the research and development of the <a class="reference external" href="http://www.pacioos.hawaii.edu/">Pacific Islands Ocean Observing System</a> (PacIOOS) wave forcast system.</p>
-<div class="admonition attention">
-<p class="admonition-title">Attention</p>
-<p>For all you surfers out there, her multi-day <a class="reference external" href="http://www.pacioos.hawaii.edu/waves-category/model/">wave model forcast</a> is <strong>freely available</strong> on the PacIOOS website. If you are wondering how well her forecast performs, she also provides objective model comparisons with <a class="reference external" href="http://www.pacioos.hawaii.edu/waves-category/buoy/">instrument oberservations</a> (click on “Forecast”).</p>
-</div>
+  <section class="tex2jax_ignore mathjax_ignore" id="floating-owc">
+<h1><span class="section-number">5. </span>Floating OWC<a class="headerlink" href="#floating-owc" title="Link to this heading">#</a></h1>
+<p>The material contents presented in this section were provided by Nic Ulm from the <a class="reference external" href="https://www.soest.hawaii.edu/ore/">Ocean and Resources Engineering (ORE) Department</a> in collaboration with <a class="reference external" href="https://www.hnei.hawaii.edu/staff/krishnakumar-rajagopalan/">Dr. Krishnakumar Rajagopalan</a>, Kyle Pappas, and Duncan Lajousky from the <a class="reference external" href="https://www.hnei.hawaii.edu/">Hawaii Natural Energy Institute (HNEI)</a> at the <a class="reference external" href="https://manoa.hawaii.edu/">University of Hawai’i at Manoa</a>.</p>
+<p>An <a class="reference external" href="https://en.wikipedia.org/wiki/Oscillating_water_column">oscillating water column</a> (OWC) represents a class of wave energy converters. The working principle is based on fluid-fluid interaction, in which one fluid body forces another through a small orifice, creating a high <strong>velocity</strong> jet.</p>
+<figure class="align-default" id="owc-principle">
+<img alt="../_images/OWC_principle.png" src="../_images/OWC_principle.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 5.1 </span><span class="caption-text">Working principles of an OWC.</span><a class="headerlink" href="#owc-principle" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>This can be found in nature.
+<a class="reference external" href="https://en.wikipedia.org/wiki/H%C4%81lona_Blowhole">Halona Blowhole</a></p>
+<figure class="align-default" id="blowhole">
+<img alt="../_images/blowhole.png" src="../_images/blowhole.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 5.2 </span><span class="caption-text">Working principles of an OWC.</span><a class="headerlink" href="#blowhole" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="halona">
+<h2><span class="section-number">5.1. </span>Halona<a class="headerlink" href="#halona" title="Link to this heading">#</a></h2>
+<figure class="align-default" id="id1">
+<img alt="../_images/Halona.png" src="../_images/Halona.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 5.3 </span><span class="caption-text">Halona OWC</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="halona-bench">
+<img alt="../_images/bench_test.png" src="../_images/bench_test.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 5.4 </span><span class="caption-text">Halona OWC turbine bench test configuration.</span><a class="headerlink" href="#halona-bench" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -446,12 +480,12 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../04_Modeling/02_Climate/markdown.html"
+       href="../04_Laboratory/markdown.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">5.2. </span>Climate</p>
+        <p class="prev-next-title"><span class="section-number">4. </span>Laboratory Testing</p>
       </div>
     </a>
     <a class="right-next"
@@ -459,7 +493,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">7. </span>Wave Modeling</p>
+        <p class="prev-next-title"><span class="section-number">6. </span>Bottom Fixed OWC</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -469,6 +503,21 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#halona">5.1. Halona</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

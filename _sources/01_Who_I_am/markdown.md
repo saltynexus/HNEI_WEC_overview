@@ -1,7 +1,7 @@
 # Who's Presenting?
 My official title with the [Ocean Energy](https://www.hnei.hawaii.edu/research/ocean-energy/) group at the [Hawaii Natural Energy Institute](https://www.hnei.hawaii.edu/) (HNEI) is "Assistant Researcher", but I like to say that I'm a "Research Engineer" with a focus on coastal processes.
 
-# What is an Ocean Engineer?
+## What is an Ocean Engineer?
 To answer this, I'll quote my alumni, Flordia Atlantic University (FAU):
 
 >Ocean engineers study the oceans to determine the effects of waves, currents and the salt water environment on ships and other marine vehicles and structures and develop methods and materials to withstand wave forces and protect against corrosion. Ocean engineers are also involved in development and use of manned and remotely operated sub-surface vehicles for deep-sea exploration and resource recovery.

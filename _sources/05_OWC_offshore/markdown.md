@@ -1,8 +1,35 @@
-# Wave Modeling
-Waves have the benefit of being highly predictable. This is due advances in our ability to predict the wind, which is the predominate forcing mechanism for waves.
+# Floating OWC
+The material contents presented in this section were provided by Nic Ulm from the [Ocean and Resources Engineering (ORE) Department](https://www.soest.hawaii.edu/ore/) in collaboration with [Dr. Krishnakumar Rajagopalan](https://www.hnei.hawaii.edu/staff/krishnakumar-rajagopalan/), Kyle Pappas, and Duncan Lajousky from the [Hawaii Natural Energy Institute (HNEI)](https://www.hnei.hawaii.edu/) at the [University of Hawai'i at Manoa](https://manoa.hawaii.edu/).  
 
-The material contents presented in this section were provided by [Dr. Ning Li](https://www.soest.hawaii.edu/soestwp/about/directory/ning-li/) from the [Ocean and Resources Engineering (ORE) Department](https://www.soest.hawaii.edu/ore/) at the [University of Hawai'i at Manoa](https://manoa.hawaii.edu/). As a developer of [NOAA's Integrated Ocean Observing System](https://ioos.noaa.gov/about/about-us/) (IOOS), Dr. Li is largely responsible for the research and development of the [Pacific Islands Ocean Observing System](http://www.pacioos.hawaii.edu/) (PacIOOS) wave forcast system.
+An [oscillating water column](https://en.wikipedia.org/wiki/Oscillating_water_column) (OWC) represents a class of wave energy converters. The working principle is based on fluid-fluid interaction, in which one fluid body forces another through a small orifice, creating a high **velocity** jet.
 
-```{attention}
-For all you surfers out there, her multi-day [wave model forcast](http://www.pacioos.hawaii.edu/waves-category/model/) is **freely available** on the PacIOOS website. If you are wondering how well her forecast performs, she also provides objective model comparisons with [instrument oberservations](http://www.pacioos.hawaii.edu/waves-category/buoy/) (click on "Forecast").
+```{figure} ./images/OWC_principle.png
+---
+name: owc_principle
+---
+Working principles of an OWC.
+```
+
+This can be found in nature.
+ [Halona Blowhole](https://en.wikipedia.org/wiki/H%C4%81lona_Blowhole) 
+
+```{figure} ./images/blowhole.png
+---
+name: blowhole
+---
+Working principles of an OWC.
+```
+## Halona
+```{figure} ./images/Halona.png
+---
+name: halona
+---
+Halona OWC
+```
+
+```{figure} ./images/bench_test.png
+---
+name: halona_bench
+---
+Halona OWC turbine bench test configuration.
 ```

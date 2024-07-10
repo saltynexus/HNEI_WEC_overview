@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>7. Wave Modeling &#8212; Wave Energy: An Ocean Engineer&#39;s High-Level Perspective</title>
+    <title>6. Bottom Fixed OWC &#8212; Wave Energy: An Ocean Engineer&#39;s High-Level Perspective</title>
   
   
   
@@ -61,8 +61,8 @@
     <link rel="icon" href="../_static/favicon.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="8. Bottom Fixed OSWEC" href="../07_OSWEC_coastal/markdown.html" />
-    <link rel="prev" title="6. Wave Modeling" href="../05_OWC_offshore/markdown.html" />
+    <link rel="next" title="7. Bottom Fixed OSWEC" href="../07_OSWEC_coastal/markdown.html" />
+    <link rel="prev" title="5. Floating OWC" href="../05_OWC_offshore/markdown.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -180,17 +180,16 @@
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../01_Who_I_am/markdown.html">1. Who’s Presenting?</a></li>
-
-<li class="toctree-l1"><a class="reference internal" href="../02_Introduction/markdown.html">3. Ocean Energy</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../03_Laboratory/markdown.html">4. Wave Modeling</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../04_Modeling/markdown.html">5. Wave Modeling</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../04_Modeling/01_Weather/markdown.html">5.1. Weather</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../04_Modeling/02_Climate/markdown.html">5.2. Climate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02_Ocean_Energy/markdown.html">2. Ocean Energy</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../03_Modeling/markdown.html">3. Wave Modeling</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../03_Modeling/01_Weather/markdown.html">3.1. Weather</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../03_Modeling/02_Climate/markdown.html">3.2. Climate</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1"><a class="reference internal" href="../05_OWC_offshore/markdown.html">6. Wave Modeling</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">7. Wave Modeling</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../07_OSWEC_coastal/markdown.html">8. Bottom Fixed OSWEC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04_Laboratory/markdown.html">4. Laboratory Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05_OWC_offshore/markdown.html">5. Floating OWC</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">6. Bottom Fixed OWC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07_OSWEC_coastal/markdown.html">7. Bottom Fixed OSWEC</a></li>
 </ul>
 
     </div>
@@ -380,7 +379,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -391,11 +392,20 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Wave Modeling</h1>
+    <h1>Bottom Fixed OWC</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coastal-engineering-structures">6.1. Coastal Engineering Structures</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#next-generation-coastal-engineering-multi-purpose-designs">6.2. Next Generation Coastal Engineering: Multi Purpose Designs</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -405,14 +415,40 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="wave-modeling">
-<h1><span class="section-number">7. </span>Wave Modeling<a class="headerlink" href="#wave-modeling" title="Link to this heading">#</a></h1>
-<p>Waves have the benefit of being highly predictable. This is due advances in our ability to predict the wind, which is the predominate forcing mechanism for waves.</p>
-<p>The material contents presented in this section were provided by <a class="reference external" href="https://www.soest.hawaii.edu/soestwp/about/directory/ning-li/">Dr. Ning Li</a> from the <a class="reference external" href="https://www.soest.hawaii.edu/ore/">Ocean and Resources Engineering (ORE) Department</a> at the <a class="reference external" href="https://manoa.hawaii.edu/">University of Hawai’i at Manoa</a>. As a developer of <a class="reference external" href="https://ioos.noaa.gov/about/about-us/">NOAA’s Integrated Ocean Observing System</a> (IOOS), Dr. Li is largely responsible for the research and development of the <a class="reference external" href="http://www.pacioos.hawaii.edu/">Pacific Islands Ocean Observing System</a> (PacIOOS) wave forcast system.</p>
-<div class="admonition attention">
-<p class="admonition-title">Attention</p>
-<p>For all you surfers out there, her multi-day <a class="reference external" href="http://www.pacioos.hawaii.edu/waves-category/model/">wave model forcast</a> is <strong>freely available</strong> on the PacIOOS website. If you are wondering how well her forecast performs, she also provides objective model comparisons with <a class="reference external" href="http://www.pacioos.hawaii.edu/waves-category/buoy/">instrument oberservations</a> (click on “Forecast”).</p>
-</div>
+  <section class="tex2jax_ignore mathjax_ignore" id="bottom-fixed-owc">
+<h1><span class="section-number">6. </span>Bottom Fixed OWC<a class="headerlink" href="#bottom-fixed-owc" title="Link to this heading">#</a></h1>
+<p>The material contents presented in this section were provided by <a class="reference external" href="https://www.soest.hawaii.edu/ore/people/faculty/zhenhua-huang/">Dr. Zhenhua Huang</a> and his students, Mayah Walker and Clink C. M. Reyes, from the <a class="reference external" href="https://www.soest.hawaii.edu/ore/">Ocean and Resources Engineering (ORE) Department</a> at the <a class="reference external" href="https://manoa.hawaii.edu/">University of Hawai’i at Manoa</a>.</p>
+<section id="coastal-engineering-structures">
+<h2><span class="section-number">6.1. </span>Coastal Engineering Structures<a class="headerlink" href="#coastal-engineering-structures" title="Link to this heading">#</a></h2>
+<figure class="align-default" id="breakwater">
+<img alt="../_images/classic_breakwater.png" src="../_images/classic_breakwater.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 6.1 </span><span class="caption-text">Example of rubble mound breakwater.</span><a class="headerlink" href="#breakwater" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="next-generation-coastal-engineering-multi-purpose-designs">
+<h2><span class="section-number">6.2. </span>Next Generation Coastal Engineering: Multi Purpose Designs<a class="headerlink" href="#next-generation-coastal-engineering-multi-purpose-designs" title="Link to this heading">#</a></h2>
+<p>Marry Two Concepts.</p>
+<figure class="align-default" id="owc-integration">
+<img alt="../_images/integration.png" src="../_images/integration.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 6.2 </span><span class="caption-text">Integration of OWC with favorable breakwater design concepts.</span><a class="headerlink" href="#owc-integration" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="owc-experiment">
+<img alt="../_images/experiment.png" src="../_images/experiment.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 6.3 </span><span class="caption-text">Profile view of scale model experiment.</span><a class="headerlink" href="#owc-experiment" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="owc-results">
+<img alt="../_images/result_sample.png" src="../_images/result_sample.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 6.4 </span><span class="caption-text">Sample of experimental results.</span><a class="headerlink" href="#owc-results" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -451,7 +487,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">6. </span>Wave Modeling</p>
+        <p class="prev-next-title"><span class="section-number">5. </span>Floating OWC</p>
       </div>
     </a>
     <a class="right-next"
@@ -459,7 +495,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">8. </span>Bottom Fixed OSWEC</p>
+        <p class="prev-next-title"><span class="section-number">7. </span>Bottom Fixed OSWEC</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -469,6 +505,22 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coastal-engineering-structures">6.1. Coastal Engineering Structures</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#next-generation-coastal-engineering-multi-purpose-designs">6.2. Next Generation Coastal Engineering: Multi Purpose Designs</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
