@@ -1,8 +1,8 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: Introduction to Wave Energy
-author: Troy W. Heitmann
+title: "Wave Energy: An Ocean Engineer's High-Level Perspective"    # Title of book (doesn't appear to show up online, but is in PDF)
+author: "Troy W. Heitmann"
 copyright: "2024"
 logo: "icons/logo.png"    # Path to book logo
 
@@ -17,7 +17,7 @@ execute:
 # Define the name of the latex output file for PDF builds
 latex:
   latex_documents:
-    targetname: Intro_wave_energy.tex
+    targetname: 2024_Heitmann_Wave_Energy.tex
 
 # Add a bibtex file so that we can create citations
 bibtex_bibfiles:
@@ -60,5 +60,4 @@ launch_buttons:
   thebe: true
 #  notebook_interface: "jupyterlab"
 #  binderhub_url: "https://mybinder.org"  # The URL for your BinderHub (e.g., https://mybinder.org)
-
 

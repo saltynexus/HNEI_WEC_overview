@@ -1,9 +1,15 @@
-# Table of contents
-# Learn more at https://jupyterbook.org/customize/toc.html
-
 format: jb-book
-root: 01_intro
+root: frontmatter
+options:
+  numbered: true
 chapters:
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
+- file: 01_Who_I_am/markdown
+- file: 02_Ocean_Energy/markdown
+- file: 03_Modeling/markdown
+  sections:
+  - file: 03_Modeling/01_Weather/markdown
+  - file: 03_Modeling/02_Climate/markdown
+- file: 04_Laboratory/markdown
+- file: 05_OWC_offshore/markdown
+- file: 06_OWC_coastal/markdown
+- file: 07_OSWEC_coastal/markdown

@@ -1,2 +1,4 @@
-publish_book.sh
 build_book.sh
+build_pdf.sh
+build_toc.sh
+publish_book.sh
