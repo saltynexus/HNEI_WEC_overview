@@ -2,10 +2,10 @@
 
 July 8, 2024
 
-This past week, Dr. Debbie Milikan asked me to meet with a group of 22 high school students from public and private schools around Oahu Hawai'i. The students were selected as part of new [Sustainability Fellowship](https://www.punahou.edu/academics/sustainability/sustainability-fellowship) hosted by Punahou School. I didn't have a formal presentation on hand, so I decided to take this opportunity to learn a realatively new form of media outlet: [Jupyter Books](https://jupyterbook.org). I have been watching this project for a little while now and I think it has matured to a level where a positive experience is plausible. I'll save these ramblings for a future blog post, but the hope is by viewing this online, you'll see the immediate value. In short, instead of limiting my presentation to 22 students, I can disseminate this work those interested around the world!!! 
+This past week, Dr. Debbie Milikan asked me to meet with a group of 22 high school students from public and private schools around Oahu Hawai'i. The students were selected as part of new [Sustainability Fellowship](https://www.punahou.edu/academics/sustainability/sustainability-fellowship) hosted by Punahou School. I didn't have a formal presentation on hand, so I decided to take this opportunity to create a [Jupyter Book](https://jupyterbook.org).
 
 :::{warning}
-This is strictly a personal reflection and does not represent the views of my affiliations.
+This is my personal website. The opinions expressed here are my own and do not reflect the views, positions, or policies of my employer or any other organization I am affiliated with. The content provided is for educational purposes only and should not be considered professional advice. While I strive for accuracy, the information may contain errors or inaccuracies. Readers should verify any information before relying on it.
 :::
 
 Given the short turn around, this version of the document will mostly contain picture which I'll use to facilitate my discussion at the student career fair. I owe a special thanks to my colleagues: Dr. Ning Li, Dr. Zhenhua Huang, Mayah Walker, and Clink C. M. Reyes, for providing me with content to present on. In collaboration with my colleagues, I hope to expand on this document, pumping more life into it and fully explore the potential of Jupyter Books as a means to disseminate information.
