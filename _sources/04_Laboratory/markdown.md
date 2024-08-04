@@ -1,7 +1,7 @@
 # Laboratory Testing
 Once you know the wave conditions, you can scale them down.
 
-```{figure} ./images/ore_lab.png
+```{figure} ./images/ore_flume.jpg
 ---
 name: ore_lab
 ---

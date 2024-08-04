@@ -1,5 +1,7 @@
 # Who's Presenting?
-My official title with the [Ocean Energy](https://www.hnei.hawaii.edu/research/ocean-energy/) group at the [Hawaii Natural Energy Institute](https://www.hnei.hawaii.edu/) (HNEI) is "Assistant Researcher", but I like to say that I'm a "Research Engineer" with a focus on coastal processes.
+My official title with the [Ocean Energy](https://www.hnei.hawaii.edu/research/ocean-energy/) group at the [Hawaii Natural Energy Institute](https://www.hnei.hawaii.edu/) (HNEI) is "Assistant Researcher", but that isn't very descriptive. If you arrived here by way of [my personal website](https://saltynexus.com) or have viewed [my work profile](https://www.hnei.hawaii.edu/staff/troy-heitmann/), I hope I need no introduction. 
+
+but I like to say that I'm a "Research Engineer" with a focus on coastal processes.
 
 ## What is an Ocean Engineer?
 To answer this, I'll quote my alumni, Flordia Atlantic University (FAU):
@@ -13,24 +15,81 @@ Despite its lack in popularity, ocean engineering used to be a well defined disc
 :name: oe_table
 
 * - Institution
-* - Florida Atlantic University
-* - Florida Institute of Technology
-* - Louisiana State University
-* - Northwestern Michigan College
-* - Old Dominion University
-* - Steven Institute of Technology
-* - Texas A&M
-* - United States Naval Academy
+  - Bachlors
+  - Masters
+  - PhD
+* - [Florida Atlantic University](https://www.fau.edu/engineering/ome/)
+  - x
+  - x
+  - x
+* - [Florida Institute of Technology](https://www.fit.edu/ocean-engineering-and-marine-sciences/)
+  - x
+  - x
+  - x
+* - [Georgia Tech](https://www.usm.edu/ocean-science-engineering/index.php)
+  - 
+  - 
+  - x
+* - [Louisiana State University](https://www.lsu.edu/eng/cee/academics/graduate/ms-coastal-and-ecological-engineering.php)
+  - 
+  - x
+  -
+* - [Northwestern Michigan College](https://www.nmc.edu/programs/academic-programs/marine-technology/index.html)
+  - x
+  -
+  -
+* - [Old Dominion University](https://www.odu.edu/academics/programs/undergraduate/marine-science-technology)
+  - x
+  - x
+  - x (civil)
+* - [Steven Institute of Technology](https://www.stevens.edu/school-engineering-science/departments/civil-environmental-ocean-engineering/ocean-engineering)
+  - x
+  - x
+  - x
+* - [Texas A&M](https://engineering.tamu.edu/ocean/index.html)
+  - x
+  - x
+  - x
+* - [United States Naval Academy](https://www.usna.edu/NAOE/academics/ocean-engineering.php)
+  - x
+  -
+  -
 * - University of California, Berkley
-* - University of Deleware
-* - University of Florida
-* - University of Georgia
-* - University of Hawaii at Manoa
-* - University of Miami
-* - University of New Hampshire
-* - University of New Orleans
-* - University of Rhode Island
-* - University of Southern Mississippi
+  - 
+  -
+  -
+* - [University of Deleware](https://ce.udel.edu/graduate/ocean-engineering-graduate-programs/)
+  - 
+  - x
+  - x
+* - [University of Florida](https://www.essie.ufl.edu/programs/coastal_and_oceanographic_engineering/)
+  - 
+  - x
+  -
+* - [University of Hawaii at Manoa](https://www.soest.hawaii.edu/ore/)
+  - 
+  - x
+  - x
+* - [University of Miami](https://bulletin.miami.edu/graduate-academic-programs/engineering/ocean-engineering/#text)
+  - 
+  - x
+  -
+* - [University of New Hampshire](https://ceps.unh.edu/ocean-engineering)
+  - x
+  - x
+  - x
+* - [University of New Orleans](https://www.uno.edu/academics/coe/name)
+  - x
+  - x
+  -
+* - [University of Rhode Island](https://web.uri.edu/oce/)
+  - x
+  - x
+  - x
+* - [University of Southern Mississippi](https://www.usm.edu/ocean-science-engineering/index.php)
+  - x
+  -
+  -
 ```
 
 ```{figure} ./images/engineering_forest_engineering.png
